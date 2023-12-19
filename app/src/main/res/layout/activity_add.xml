@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".AddActivity">
+
+    <TextView
+        android:id="@+id/txt_addNoteHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="16dp"
+        android:text="Add Note"
+        android:textColor="@color/green"
+        android:textSize="24dp"
+        android:fontFamily="@font/roboto"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_save"
+        android:src="@drawable/baseline_done_24"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@id/txt_addNoteHeader"
+        android:layout_marginEnd="6dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:id="@+id/et_noteTitle"
+        android:hint="Enter Note Title"
+        android:textColorHint="#804CAF50"
+        android:textColor="@color/green"
+        android:padding="12dp"
+        android:textSize="20sp"
+        android:layout_below="@id/txt_addNoteHeader"
+        android:background="@drawable/green_border"
+        android:layout_marginTop="16dp"
+        android:maxLines="1"
+        android:fontFamily="@font/roboto"/>
+
+    <EditText
+        android:id="@+id/et_noteContent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/et_noteTitle"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/green_border"
+        android:gravity="top"
+        android:hint="Enter Note Content"
+        android:padding="12dp"
+        android:textColorHint="#804caf50"
+        android:textColor="@color/green"
+        android:textSize="18sp"
+        android:fontFamily="@font/roboto"/>
+
+
+</RelativeLayout>
